@@ -25,7 +25,7 @@ data "azurerm_client_config" "current" {}
 
 module "caf-enterprise-scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = ">= 4.0.0"
+  version = "~> 4.0.0"
 
   default_location = var.primary_location
 
@@ -54,7 +54,7 @@ module "caf-enterprise-scale" {
 
 module "enterprise_scale_nested_landing_zone" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = ">= 4.0.0" 
+  version = "~> 4.0.0" 
 
   default_location = var.primary_location
 
@@ -107,7 +107,7 @@ module "enterprise_scale_nested_landing_zone" {
 
 module "enterprise_scale_nested_landing_zone_zee_entertainment" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = ">= 4.0.0" 
+  version = "~> 4.0.0" 
 
   default_location = var.primary_location
 
